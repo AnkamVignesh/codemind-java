@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class Sample
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int n,x[],i;
+        n=sc.nextInt();
+        x=new int[n];
+        for(i=0;i<n;i++)
+        x[i]=sc.nextInt();
+        
+        for(i=n-1;i>=0;i--)
+        {
+            if(x[i]%2!=1)
+            {
+                System.out.println(x[i]);
+                break;
+            }
+        }
+    }
+}

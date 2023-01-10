@@ -17,37 +17,40 @@ class Main
             c=a+b;
         }
         if(found==1)
-        return true;
+          return true;
         else
-        return false;
+          return false;
     }
-    public static void main(String args[])
+  public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
         int n,d1,d2;
         n=sc.nextInt();
+        
         for(int i=n+1;;i++)
         {
             if(fibanacci(i))
             {
-                d1=i;
-                break;
+             d1=i;
+             break;
             }
         }
-        for(int j=n-1;;j--)
+    
+    for(int j=n-1;;j--)
+    {
+        if(fibanacci(j))
         {
-            if(fibanacci(j))
-            {
-                d2=j;
-                break;
-                
-            }
+            d2=j;
+            break;
         }
-        if((n-d2)==(d1-n))
-          System.out.println(d2+" "+d1);
-        else if((n-d2)>(d1-n))
-          System.out.println(d1);
-        else
-          System.out.println(d2);
     }
+    
+    if((n-d2)==(d1-n))
+      System.out.println(d2+" "+d1);
+    else if((n-d2)>(d1-n))
+      System.out.println(d1);
+    else
+      System.out.println(d2);
+    }   
+    
 }

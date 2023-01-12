@@ -9,25 +9,24 @@ class Main
         b=sc.nextInt();
         int temp=a;
         int semp=b;
-         for(int i=1;i<=(int)a/2;i++)
-         {
-             if(a%i==0)
-             {
-                sum=sum+i;
-                
-             }
-         }
-       for(int i=1;i<=(int)b/2;i++)
-       {
-           if(b%i==0)
-           {
-               add=add+i;
-           }
-       }
-       if(temp==add && semp==sum)
-          System.out.println("Amicable");
-       else
-          System.out.println("Not Amicable");
         
+        for(int i=1;i<=(int)a/2;i++)
+        {
+            if(a%i==0)
+            {
+                sum=sum+i;
+            }
+        }
+        for(int i=1;i<=(int)b/2;i++)
+        {
+            if(b%i==0)
+            {
+                add=add+i;
+            }
+        }
+        if(temp==add && semp==sum)
+           System.out.println("Amicable");
+        else
+           System.out.println("Not Amicable");
     }
 }

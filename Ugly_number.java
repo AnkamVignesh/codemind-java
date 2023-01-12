@@ -21,26 +21,29 @@ class Main
             {
                 found=1;
                 n=n/2;
-                
             }
             if(n==1 || found==0)
             break;
+            
         }
         if(found==1)
-        return true;
+         return true;
         else
-        return false;
-        
+          return false;
     }
+    
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
         int n;
         n=sc.nextInt();
-        if(ugly(n)|| n==1)
-          System.out.println("Ugly Number");
+        if(ugly(n) || n==1)
+           System.out.println("Ugly Number");
         else
-          System.out.println("Not Ugly Number");
+           System.out.println("Not Ugly Number");
+        
+        
+        
     }
     
 }
